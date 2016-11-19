@@ -17,3 +17,7 @@ services:
     volumes:
       - ./adlists.list:/etc/pihole/adlists.list
     restart: always
+    logging:
+      driver: syslog
+      options:
+        syslog-address: "udp://192.168.1.8:514"
