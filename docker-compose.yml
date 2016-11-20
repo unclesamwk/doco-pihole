@@ -10,8 +10,8 @@ pihole:
     - NET_ADMIN
   environment:
     ServerIP: 192.168.1.8
-    DNS1: 8.26.56.26 
-    DNS2: 8.8.4.4
+    DNS1: 80.67.169.12 
+    DNS2: 80.67.169.40
   volumes:
     - ./adlists.list:/etc/pihole/adlists.list
   restart: always
