@@ -15,3 +15,7 @@ pihole:
   volumes:
     - ./adlists.list:/etc/pihole/adlists.list
   restart: always
+  log_driver: "json-file"
+  log_opt:
+    max-size: "100k"
+    max-file: "20"
