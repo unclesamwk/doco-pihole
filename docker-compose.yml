@@ -14,6 +14,8 @@ pihole:
     DNS2: 80.67.169.40
   volumes:
     - ./adlists.list:/etc/pihole/adlists.list
+    - ./timezone:/etc/timezone:ro
+    - /etc/localtime:/etc/localtime:ro
   restart: always
   log_driver: "json-file"
   log_opt:
